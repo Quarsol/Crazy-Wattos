@@ -1,6 +1,6 @@
 var apiURL = 'https://swapi.co/api/starships/'
-const spaceshipArr = ['./spaceimg/deathStar_01.png', './spaceimg/Executor_01.jpg', './spaceimg/milleniumFalcon_01.jpg', './spaceimg/sentinel_01.jpg', './spaceimg/tieadvanced.jpg', './spaceimg/xwing.png', './spaceimg/Ywing.jpg']
-const priceArr = ['4000000000 credits']
+const spaceshipArr = ['./spaceimg/Executor_01.jpg', './spaceimg/sentinel_01.jpg', './spaceimg/deathStar_01.png', './spaceimg/milleniumFalcon_01.jpg', './spaceimg/Ywing.jpg', './spaceimg/xwing.png', './spaceimg/tieadvanced.jpg']
+const priceArr = ['4,000,000,000 credits', '4,000,000,000 credits', '4,000,000,000 credits', '4,000,000,000 credits', '4,000,000,000 credits', '4,000,000,000 credits', '4,000,000,000 credits', ]
 
 function getStarships() {
   fetch(apiURL)
@@ -12,23 +12,26 @@ function getStarships() {
       var content = document.querySelector('.starships')
 
       var starship = document.createElement('section')
-      var shipDetails
+      var shipDetails = document.createElement('div')
       var h3 = document.createElement('h3')
       var h4 = document.createElement('h4')
       var p = document.createElement('p')
       var img = document.createElement('img')
 
       starship.setAttribute('class', 'starship')
+      shipDetails.setAttribute('class', 'shipDetails')
 
       h3.textContent = `${res.results[i].name}`
       h4.textContent = `Model: ${res.results[i].model}`
       p.textContent = `Price: ${priceArr[i]}`
       img.src = `${spaceshipArr[i]}`
 
+      shipDetails.appendChild(h3)
+      shipDetails.appendChild(h4)
+      shipDetails.appendChild(p)
+
       starship.appendChild(img)
-      starship.appendChild(h3)
-      starship.appendChild(h4)
-      starship.appendChild(p)
+      starship.appendChild(shipDetails)
 
       content.appendChild(starship)
     }
