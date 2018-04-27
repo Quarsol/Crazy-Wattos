@@ -32,6 +32,9 @@ div h2 span {
   border: 2px solid #000;
   border-radius: 20px;
 }
+footer {
+
+}
 .individual {
   display: flex;
   align-items: center;
@@ -45,7 +48,6 @@ div h2 span {
   margin: 10px;
 }
 .starship {
-  /* width: 800px; */
   display: flex;
   margin: 5px;
   align-items: center;
@@ -66,13 +68,15 @@ div h2 span {
   display: flex;
   align-items: center;
 }
-<<<<<<< Updated upstream
+.footer {
+  position: absolute;
+  bottom: 0;
+}
+.watto-message h2 {
+  margin-left: 20px;
+}
 .DSexplosion {
   background-image: url(./spaceimg/explosion.gif);
   background-repeat: no-repeat;
   background-size: 100%;
-=======
-.watto-message h2 {
-  margin-left: 20px;
->>>>>>> Stashed changes
 }
