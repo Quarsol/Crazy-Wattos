@@ -1,13 +1,38 @@
 body {
+
   font-family: helvetica;
 }
 main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 60px;
+}
+h2 {
+  margin-bottom: 40px;
+  text-align: center;
+}
+h3 {
+  margin-left: 20px;
+  text-align: center;
 }
 img {
   width: 100px;
   height: 100px;
   border-radius: 15px;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+form {
+  width: 150px;
+  margin: auto;
+}
+div h3 span {
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 20px;
 }
 .starship {
   display: flex;
@@ -22,5 +47,12 @@ img {
   background-color: lightBlue;
 }
 .shipDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 10px;
+}
+.watto-message {
+  display: flex;
+  align-items: center;
 }

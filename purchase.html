@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Buying a Starship</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="index.html">Index</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="brochure.html">Brochure</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1>You are buying a(n) <span id='starship'></span>!!!</h1>
+      <div class="watto-message">
+        <img src="./aboutimg/watto.jpg" alt="picture of watto">
+        <h3><<span>How are you going to pay for all this?</span></h3>
+      </div>
+      <form action="your-server-side-code" method="POST">
+        <script
+          src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="pk_test_f6HBLYKARX4eOKqxgNzzB9Tt"
+          data-amount="40000000000"
+          data-name="Crazy Watto's Spaceship Emporium!"
+          data-description="Losing money has never been easier!"
+          data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+          data-locale="auto"
+          data-currency="USD">
+        </script>
+      </form>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="purchase.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -12,7 +12,7 @@ function getStarships() {
       var content = document.querySelector('.starships')
 
       var starship = document.createElement('section')
-      var shipDetails = document.createElement('div')
+      var shipDetails = document.createElement('a')
       var h3 = document.createElement('h3')
       var h4 = document.createElement('h4')
       var p = document.createElement('p')
@@ -21,6 +21,11 @@ function getStarships() {
       starship.setAttribute('class', 'starship')
       shipDetails.setAttribute('class', 'shipDetails')
 
+      if (res.results[i].name == 'Death Star') {
+        shipDetails.href = 'dsexplosion.html'
+      } else {
+        shipDetails.href = `purchase.html?starship=${res.results[i].name}`;
+      }
       h3.textContent = `${res.results[i].name}`
       h4.textContent = `Model: ${res.results[i].model}`
       p.textContent = `Price: ${priceArr[i]}`
