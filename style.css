@@ -10,11 +10,9 @@ main {
 }
 h2 {
   margin-bottom: 40px;
-  text-align: center;
 }
 h3 {
-  margin-left: 20px;
-  text-align: center;
+
 }
 img {
   width: 100px;
@@ -29,23 +27,25 @@ form {
   width: 150px;
   margin: auto;
 }
-div h3 span {
+div h2 span {
   padding: 10px;
   border: 2px solid #000;
   border-radius: 20px;
 }
-footer{
-  color: white;
-  background-color: #222222;
-  width: 100%;
+.individual {
   display: flex;
-  text-align: center;
+  align-items: center;
 }
-.footer {
-  position: absolute;
-  bottom: 0;
+.contributorName {
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.contributorBio {
+  margin: 10px;
 }
 .starship {
+  /* width: 800px; */
   display: flex;
   margin: 5px;
   align-items: center;
@@ -60,15 +60,19 @@ footer{
 .shipDetails {
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin: 10px;
 }
 .watto-message {
   display: flex;
   align-items: center;
 }
+<<<<<<< Updated upstream
 .DSexplosion {
   background-image: url(./spaceimg/explosion.gif);
   background-repeat: no-repeat;
   background-size: 100%;
+=======
+.watto-message h2 {
+  margin-left: 20px;
+>>>>>>> Stashed changes
 }
