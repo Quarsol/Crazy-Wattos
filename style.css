@@ -34,6 +34,17 @@ div h3 span {
   border: 2px solid #000;
   border-radius: 20px;
 }
+footer{
+  color: white;
+  background-color: #222222;
+  width: 100%;
+  display: flex;
+  text-align: center;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+}
 .starship {
   display: flex;
   margin: 5px;
@@ -55,4 +66,9 @@ div h3 span {
 .watto-message {
   display: flex;
   align-items: center;
+}
+.DSexplosion {
+  background-image: url(./spaceimg/explosion.gif);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
