@@ -113,3 +113,6 @@ footer {
   background-repeat: no-repeat;
   background-size: 100%;
 }
+.hidden {
+  display: none;
+}
