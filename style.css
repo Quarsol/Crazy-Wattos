@@ -1,5 +1,5 @@
 body {
-  font-family: arial;
+  font-family: helvetica;
 }
 main {
   margin-top: 60px;
@@ -11,8 +11,15 @@ img {
 }
 .starship {
   display: flex;
-  margin: 10px;
+  margin: 5px;
   align-items: center;
+  cursor: pointer;
+}
+.starship:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.starship:hover {
+  background-color: lightBlue;
 }
 .shipDetails {
   margin: 10px;
