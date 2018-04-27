@@ -31,16 +31,26 @@ form {
 }
 div h2 span {
   padding: 10px;
-  border: 2px solid #000;
+  border: 2px solid #fff100;
   border-radius: 20px;
 }
 .brochureSection {
   display: flex;
   align-items: center;
+  font-size: 28px;
+  margin: 20px;
+}
+.brochureSection div {
+  border: 2px solid #fff100;
+  border-radius: 20px;
 }
 .brochureSection p {
-  margin-left: 20px;
+  margin: 20px;
   font-size: 18px;
+}
+.brochureWatto {
+  height: 150px;
+  width: 150px;
 }
 footer {
   width: 100%;
@@ -90,6 +100,14 @@ footer {
 }
 .watto-message h2 {
   margin-left: 20px;
+}
+.brochureShip {
+  margin: 30px;
+  width: 300px;
+  height: 300px;
+}
+.flipped {
+  transform: rotateY(180deg);
 }
 .DSexplosion {
   background-image: url('./spaceimg/explosion.gif');
